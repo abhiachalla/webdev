@@ -141,3 +141,20 @@ a{
     color: rgb(110, 118, 125);
     text-decoration: none;
 }
+
+
+.wd-ellipsis-gray {
+    position: absolute;
+    right: 25rem;
+    top: 0.5rem;
+    color: rgb(21, 129, 179);
+    transform: scale(1,1.5);
+}
+
+.wd-ellipsis-blue {
+    position: absolute;   
+    right: 25rem;
+    top: 4.5rem;
+    color: rgb(110, 118, 125);
+    transform: scale(1,1.5);
+}
