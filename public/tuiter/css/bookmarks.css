@@ -145,7 +145,7 @@ a{
 
 .wd-ellipsis-gray {
     position: absolute;
-    right: 25rem;
+    right: 28rem;
     top: 0.5rem;
     color: rgb(21, 129, 179);
     transform: scale(1,1.5);
@@ -153,7 +153,7 @@ a{
 
 .wd-ellipsis-blue {
     position: absolute;   
-    right: 25rem;
+    right: 28rem;
     top: 4.5rem;
     color: rgb(110, 118, 125);
     transform: scale(1,1.5);
