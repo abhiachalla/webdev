@@ -35,7 +35,7 @@ function App() {
      <Route path="/hello"
             exact={true}
             element={<HelloWorld/>}/>
-     <Route path="/a6"
+     <Route path="/"
             exact={true}
             element={<Labs/>}/>
      <Route path = {["/a6/tuiter","/a6/tuiter/home"]}
