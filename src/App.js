@@ -38,12 +38,12 @@ function App() {
      <Route path="/"
             exact={true}
             element={<Labs/>}/>
-     <Route path = {["/a6/tuiter","/a6/tuiter/home"]}
+     <Route path= "/a6/tuiter"
             exact={true}
             element={<HomeScreen/>}/>
-    {/* <Route path=
+    <Route path="/a6/tuiter/home"
             exact={true}
-            element={<HomeScreen/>}/> */}
+            element={<HomeScreen/>}/>
     <Route path="/a6/tuiter/explore"
             exact={true}
             element={<Explore/>}/>
