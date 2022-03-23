@@ -41,10 +41,10 @@ function App() {
      <Route path="/tuiter"
             exact={true}
             element={<HomeScreen/>}/>
-    <Route path="/tuiter/home"
+    <Route path="/home"
             exact={true}
             element={<HomeScreen/>}/>
-    <Route path="/tuiter/explore"
+    <Route path="/explore"
             exact={true}
             element={<Explore/>}/>
    </Routes>
