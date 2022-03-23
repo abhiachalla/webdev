@@ -10,7 +10,7 @@ const NavigationSidebar = ({active}) => {
     return(
         <>
             <div className="list-group">
-            <Link to="/"
+            <Link to="/a6"
                       className="list-group-item">
                     <i className="fab fa-twitter"></i>
                 </Link>
