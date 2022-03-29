@@ -3,10 +3,21 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import tuitsReducer from './components/Tuiter/reducers/tuits-reducer'
+import whoReducer from "./components/Tuiter/reducers/who-reducer";
+import {combineReducers, createStore} from "redux";
+import {Provider} from "react-redux";
+
+const reducer = combineReducers({
+  tuits: tuitsReducer, who: whoReducer
+});
+const store = createStore(reducer);
 
 ReactDOM.render(
   <React.StrictMode>
+    <Provider store={store}>
     <App />
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );

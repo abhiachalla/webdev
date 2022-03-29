@@ -39,7 +39,7 @@ function App() {
            <Route path="hello"
                   element={<HelloWorld/>}/>
            <Route path="tuiter" >
-             <Route  index element={<HomeScreen/>}/>
+             <Route  index element={<Tuiter/>}/>
 
              <Route path="explore"
                     element={<Explore/>}/>

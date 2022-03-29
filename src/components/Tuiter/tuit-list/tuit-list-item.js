@@ -3,10 +3,13 @@ import './tuit.css';
 import TuitStats from "./tuit-stats.js";
 import {useDispatch} from "react-redux";
 
+
+
 const TuitListItem = ({tuit}) => {
+
     const dispatch = useDispatch();
-    const deleteTweetClickHandler = () => {
-        dispatch({type: 'delete-tweet', tuit})
+    const deleteTuitClickHandler = () => {
+        dispatch({type: 'delete-tuit', tuit})
     }
     return(
         <li className="list-group-item">
@@ -17,7 +20,8 @@ const TuitListItem = ({tuit}) => {
                              src={tuit['logo-image']}/>
                     </td>
                     <td className="ps-3" style={{width: '100%'}}>
-                        <i onClick={deleteTweetClickHandler} className="fas fa-times fa-pull-right"></i>
+                        <i onClick={deleteTuitClickHandler} className="fas fa-times fa-pull-right"></i>
+                        
                         <span className="fw-bold">{tuit.userName}</span>
                         {tuit.verified && <i class="px-1 fas fa-check-circle"></i>}
                         <span className="ms-1 text-secondary">@{tuit.handle}</span>
@@ -48,4 +52,4 @@ const TuitListItem = ({tuit}) => {
     );
 };
 
-export default TweetListItem;
+export default TuitListItem;

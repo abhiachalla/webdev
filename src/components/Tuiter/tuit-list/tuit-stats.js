@@ -2,6 +2,7 @@ import React from "react";
 import {useDispatch} from "react-redux";
 
 const TuitStats = ({tuit}) => {
+
     const dispatch = useDispatch();
     const likeClickHandler = () => {
         dispatch({type: 'like-tuit', tuit});
@@ -15,7 +16,7 @@ const TuitStats = ({tuit}) => {
         </div>
         <div className="col">
             <i className="fas fa-retweet me-2"></i>
-            {tuit.stats.retweets}
+            {tuit.stats.retuits}
         </div>
         <div className="col" onClick={likeClickHandler}>
             {

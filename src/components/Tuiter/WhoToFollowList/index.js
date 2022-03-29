@@ -7,6 +7,7 @@ import {useSelector} from "react-redux";
 
 
 const WhoToFollowList = () => {
+
     const who = useSelector(state => state.who);
     console.log(who);
     return (<>
