@@ -19,7 +19,7 @@ const ExploreComponent = () => {
            </div>
            <div className="nav nav-tabs flex-md-nowwrap pt-3 " >
                     <li className="nav-item">
-                            <a href="#" className="nav-link active"> <span class="text-white">For you</span></a>
+                            <a href="#" className="nav-link active"> <span className="text-white">For you</span></a>
                     </li>
                     <li className="nav-item">
                             <a href="#" className="nav-link ">Trending</a>

@@ -7,12 +7,12 @@ const WhoToFollowListItem = ({
 }) =>{
     return(
     
-        <div class="row">
+        <div className="row">
             
-                    <div class="col-3 pb-3" >
+                    <div className="col-3 pb-3" >
                         <img src={who.avatarIcon} alt="image"  className="img-fluid rounded-circle"/>
                     </div>
-                    <div class="col-6">
+                    <div className="col-6">
                         <div className="fw-bold"> {who.userName} 
                         <i className="fas fa-check-circle"></i> 
                         </div> 

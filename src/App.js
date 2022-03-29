@@ -22,7 +22,7 @@ import ExploreComponent from './components/Tuiter/explore-screen/explore-screen.
 import HomeScreen from './components/Tuiter/ChallengeHomeScreen/HomeScreen.js';
 import CenterPost from './components/Tuiter/homescreen/CenterPosts';
 
-import Explore from './components/Tuiter/explore-screen/Explore';
+import Explore from './components/Tuiter/explore-screen/Explore.js';
 
 
 
@@ -31,23 +31,21 @@ function App() {
 
 <BrowserRouter>
  <div className="container">
-   <Routes>
-     <Route path="/hello"
-            exact={true}
-            element={<HelloWorld/>}/>
-     <Route path="/"
-            exact={true}
-            element={<Labs/>}/>
-     <Route path= "/a6/tuiter"
-            exact={true}
-            element={<HomeScreen/>}/>
-    <Route path="/a6/tuiter/home"
-            exact={true}
-            element={<HomeScreen/>}/>
-    <Route path="/a6/tuiter/explore"
-            exact={true}
-            element={<Explore/>}/>
-   </Routes>
+ 
+
+<Routes>
+ <Route path="/">
+         <Route index element={<Labs/>}/>
+           <Route path="hello"
+                  element={<HelloWorld/>}/>
+           <Route path="tuiter" >
+             <Route  index element={<HomeScreen/>}/>
+
+             <Route path="explore"
+                    element={<Explore/>}/>
+           </Route>
+         </Route>
+       </Routes>
  </div>
 </BrowserRouter>
 

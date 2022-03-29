@@ -3,6 +3,7 @@ import NavigationSidebar from "../NavigationSidebar/NavigationSideBar";
 import react from "react";
 import ExploreComponent from "./explore-screen";
 import WhoToFollowList from "../WhoToFollowList";
+ 
 
 const Explore = () => {
 return (
