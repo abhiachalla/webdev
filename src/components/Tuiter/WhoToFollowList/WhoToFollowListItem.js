@@ -9,7 +9,7 @@ const WhoToFollowListItem = ({
     
         <div className="row">
             
-                    <div className="col-3 pb-3" >
+                    <div className="col-2 pb-3" >
                         <img src={who.avatarIcon} alt="image"  className="img-fluid rounded-circle"/>
                     </div>
                     <div className="col-6">
