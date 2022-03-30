@@ -18,13 +18,13 @@ const NavigationSidebar = ({active}) => {
                 </Link>
                 <Link to="/tuiter"
                       className={`list-group-item ${active === 'home' ? 'active' : ''}`}>
-                    <i className="fa fa-home p-2"></i>
-                    <span className="d-none d-xl-inline ">Home</span>
+                    <i className="fa fa-home p-0"></i>
+                    <span className="d-none d-xl-inline p-3 ">Home</span>
                 </Link>
                 <Link to="/tuiter/explore"
                       className={`list-group-item ${active === 'explore' ? 'active' : ''}`}>
-                    <i className="fa fa-hashtag p-2"></i>
-                    <span className="d-none d-xl-inline">Explore</span>
+                    <i className="fa fa-hashtag p-0"></i>
+                    <span className="d-none d-xl-inline p-3">Explore</span>
                 </Link>
                 
 
