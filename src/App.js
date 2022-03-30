@@ -23,6 +23,8 @@ import HomeScreen from './components/Tuiter/ChallengeHomeScreen/HomeScreen.js';
 import CenterPost from './components/Tuiter/homescreen/CenterPosts';
 
 import Explore from './components/Tuiter/explore-screen/Explore.js';
+import Profile from './components/Tuiter/ProfileScreen/index.js';
+import EditProfile from './components/Tuiter/ProfileScreen/EditProfile';
 
 
 
@@ -36,6 +38,7 @@ function App() {
 <Routes>
  <Route path="/">
          <Route index element={<Labs/>}/>
+
            <Route path="hello"
                   element={<HelloWorld/>}/>
            <Route path="tuiter">
@@ -44,7 +47,19 @@ function App() {
              <Route path="explore"
                     element={<Explore/>}/>
            </Route>
-         </Route>
+         
+
+         <Route path="profile">
+                  <Route index element={<Profile/>}/>
+
+                      <Route path="editProfile" element={<EditProfile/>}/>
+
+
+
+                      </Route>
+                             
+                      </Route>
+
        </Routes>
  </div>
 </BrowserRouter>

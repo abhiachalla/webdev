@@ -5,11 +5,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import tuitsReducer from './components/Tuiter/reducers/tuits-reducer'
 import whoReducer from "./components/Tuiter/reducers/who-reducer";
+import profileReducer from "./components/Tuiter/reducers/profile-reducer"
 import {combineReducers, createStore} from "redux";
 import {Provider} from "react-redux";
 
+
 const reducer = combineReducers({
-  tuits: tuitsReducer, who: whoReducer
+  tuits: tuitsReducer, who: whoReducer, profile: profileReducer
 });
 const store = createStore(reducer);
 
