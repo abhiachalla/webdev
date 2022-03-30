@@ -12,7 +12,7 @@ return(
         <div className="pb-5">
             <div className = "row">
                     <div className = "col-2">
-                        <Link to="/a7/twitter/home">
+                        <Link to="/tuiter">
                         <i className="fa fa-arrow-left text-muted" aria-hidden="true"></i>
                         </Link>
                         
@@ -44,8 +44,7 @@ return(
                             </Link>
 
                             <Routes>
-                            <Route path="/tuiter/profile/editProfile"
-                               element={<EditProfileScreen/>}/>
+
                             </Routes>
                         </div>
                     </div>

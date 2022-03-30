@@ -21,11 +21,12 @@ const NavigationSidebar = ({active}) => {
                     <i className="fa fa-home p-2"></i>
                     <span className="d-none d-xl-inline ">Home</span>
                 </Link>
-                <Link to="explore"
+                <Link to="/tuiter/explore"
                       className={`list-group-item ${active === 'explore' ? 'active' : ''}`}>
                     <i className="fa fa-hashtag p-2"></i>
                     <span className="d-none d-xl-inline">Explore</span>
                 </Link>
+                
 
                 
         
@@ -71,16 +72,13 @@ const NavigationSidebar = ({active}) => {
                     </div>
                 </div>
             </a>                  
-            <a className="list-group-item list-group-item-action py-3 wd-clr-black"  href="#">
-                <div className="row">
-                    <div className="col-xxl-2 col-xl-2 col-lg-1 col-md-2 col-sm-1">
-                        <i className="fas fa-user"></i>
-                    </div>
-                    <div className="col-xxl-10 col-xl-8 d-none d-xl-block">
-                                Profile
-                    </div>
-                </div>
-            </a>
+
+            <Link to="/tuiter/profile"
+                      className={`list-group-item ${active === 'profile' ? 'active' : ''}`}>
+                    <i className="fa fa-hashtag p-2"></i>
+                    <span className="d-none d-xl-inline">Profile</span>
+                </Link>
+
             <a className="list-group-item list-group-item-action py-3 wd-clr-black"  href="#">
                 <div className="row">
                     <div className="col-xxl-2 col-xl-2 col-lg-1 col-md-2 col-sm-1">

@@ -8,7 +8,7 @@ const ProfileScreen = () => {
     return(
         <div class="row mt-2">
             <div class="col-2 col-md-2 col-lg-2 col-xl-2">
-                <NavigationSidebar active="Profile"/>
+                <NavigationSidebar active="profile"/>
             </div>
             <div class = "col-xxl-6 col-xl-6 col-lg-6 mb-3 col-md-10 col-sm-10 col-xs-10">
                 <ProfileComponent/>

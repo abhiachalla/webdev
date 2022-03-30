@@ -16,7 +16,7 @@ const EditProfile = () =>{
         <div className="pb-5 mb-5">
             <div className = "row">
                 <div className = "col-2">
-                    <Link to="/profile"><i className="fas fa-times" aria-hidden="true"></i></Link>
+                    <Link to="/tuiter/profile"><i className="fas fa-times" aria-hidden="true"></i></Link>
                 </div>
                 <div className = "col-8">
                     <div className = "row pb-0 mb-0">
@@ -25,7 +25,7 @@ const EditProfile = () =>{
                 </div>
                 <div className="col-2 mb-2">
                     <button className="btn btn-light rounded-pill wd-save-btn" onClick={saveChanges}>
-                       <Link to="/a7/twitter/profile"> <strong>Save</strong> </Link>
+                       <Link to="/tuiter/profile"> <strong>Save</strong> </Link>
                     </button>
                 </div>
             </div>

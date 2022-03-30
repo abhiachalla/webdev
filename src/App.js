@@ -24,7 +24,7 @@ import CenterPost from './components/Tuiter/homescreen/CenterPosts';
 
 import Explore from './components/Tuiter/explore-screen/Explore.js';
 import Profile from './components/Tuiter/ProfileScreen/index.js';
-import EditProfile from './components/Tuiter/ProfileScreen/EditProfile';
+import EditProfileScreen from './components/Tuiter/ProfileScreen/EditProfileScreen';
 
 
 
@@ -43,20 +43,19 @@ function App() {
                   element={<HelloWorld/>}/>
            <Route path="tuiter">
              <Route  index element={<Tuiter/>}/>
+         
 
              <Route path="explore"
                     element={<Explore/>}/>
+
+
+
            </Route>
          
 
-         <Route path="profile">
-                  <Route index element={<Profile/>}/>
+         <Route path = "tuiter/profile" element={<Profile/>}/>
+         <Route path = "tuiter/profile/editProfile" element={<EditProfileScreen/>}/>
 
-                      <Route path="editProfile" element={<EditProfile/>}/>
-
-
-
-                      </Route>
                              
                       </Route>
 
