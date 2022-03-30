@@ -4,11 +4,27 @@ import { Link } from "react-router-dom";
 
 const EditProfile = () =>{
     const profileData = useSelector((state) => state.profile.profile)
+    
+    const [name, setName] = useState(profileData["firstName"] + " " + profileData["lastName"]);
+    const [bio, setBio] = useState(profileData["bio"]);
+    const [website, setWebsite] = useState(profileData["website"]);
+    const [location, setLocation] = useState(profileData["location"]);
+    const [dob, setDob] = useState(profileData["dateOfBirth"]);
+ 
 
     let[newInput, setProfileData] = useState({})
     const dispatch = useDispatch();
     const saveChanges = () => {
-        dispatch({type:'save', newInput})
+
+        profileData["firstName"] = name.split(" ")[0];
+        profileData["lastName"] = name.split(" ")[1];
+        profileData["bio"] = bio;
+        profileData["website"] = website;
+        profileData["location"] = location;
+        profileData["dateOfBirth"] = dob; 
+    
+
+        dispatch({type:'save', profileData})
     }
 
     return(
@@ -45,32 +61,32 @@ const EditProfile = () =>{
                     <li className="wd-border-top list-group-item wd-item-list">  
                         <label>Name</label>  
                         <input type="text" placeholder= "Name" defaultValue={profileData.firstName + " " + profileData.lastName} className="form-control " name="name"
-                        onChange = {e => setProfileData((value) => ({...value,[e.target.name] : e.target.value}))}/>
+                         value={name} onChange = {(e) => setName(e.target.value)}/>
                     </li>
                     <br/>
                     <li className="list-group-item wd-item-list">
                         <label>Bio</label>
-                        <textarea defaultValue={profileData.bio} className="form-control" name = "bio"
-                        onChange = {e => setProfileData((value) =>({...value,[e.target.name]: e.target.value}))}> 
+                        <textarea defaultValue={profileData.bio} className="form-control" name = "bio" value={bio}
+                        onChange = {(e) => setBio(e.target.value)}> 
                         </textarea>
                     </li>
                     <br/>  
                     <li className="list-group-item wd-item-list">
                         <label>Location</label>
-                        <input type="text" placeholder="Location" defaultValue={profileData.location} className="form-control " name = "location"
-                        onChange = {e => setProfileData((value) =>({...value,[e.target.name] : e.target.value}))}/>
+                        <input type="text" placeholder="Location" defaultValue={profileData.location} className="form-control " name = "location" value = {location}
+                        onChange = {(e) => setLocation(e.target.value)}/>
                     </li>
                     <br/>  
                     <li className="list-group-item wd-item-list">
                         <label>Website</label>
-                        <input type="text" placeholder="Website" defaultValue={profileData.website} className="form-control" name = "website"
-                        onChange = {e => setProfileData((value) =>({...value,[e.target.name] : e.target.value}))}/>
+                        <input type="text" placeholder="Website" defaultValue={profileData.website} className="form-control" name = "website" value = {website}
+                        onChange = {(e) => setWebsite(e.target.value)}/>
                     </li>
                     <br/>      
                     <li className="list-group-item wd-border-btm wd-item-list">
                         <label>Birth Date</label>
-                        <input type="text" placeholder="DOB" defaultValue={profileData.dateOfBirth} className="form-control  "  name = "dateOfBirth"
-                        onChange = {e => setProfileData((value) =>({...value,[e.target.name] : e.target.value.toString()}))}/>
+                        <input type="text" placeholder="DOB" defaultValue={profileData.dateOfBirth} className="form-control  "  name = "dateOfBirth" value = {dob}
+                        onChange = {(e) => setDob(e.target.value)}/>
                     </li>
                 </ul>
             </div>
