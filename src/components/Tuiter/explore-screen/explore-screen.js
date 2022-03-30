@@ -5,7 +5,7 @@ import './explore.css';
 const ExploreComponent = () => {
     return(
         <>
-            <div className="row wd-search-align ms-2">
+            <div className="row wd-search-align ms-5 ">
             <div className="col-xxl-9 col-xl-9 col-lg-9 col-sm-9 col-md-9 rounded-pill bg-white">
                 <div className="wd-search input-form bg-white">
                     <i className="bg-white"><i className="fas fa-search pt-2"></i></i>
@@ -14,7 +14,7 @@ const ExploreComponent = () => {
                 
             </div>
             <div className="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 me-1">
-                <a className="fas fa-cog fa-2x " href="#"></a>
+                <a className="fas fa-cog fa-2x ms-5" href="#"></a>
             </div>
            </div>
            <div className="nav nav-tabs flex-md-nowwrap pt-3 " >
