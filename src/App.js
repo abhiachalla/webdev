@@ -38,7 +38,7 @@ function App() {
          <Route index element={<Labs/>}/>
            <Route path="hello"
                   element={<HelloWorld/>}/>
-           <Route path="tuiter" >
+           <Route path="tuiter">
              <Route  index element={<Tuiter/>}/>
 
              <Route path="explore"

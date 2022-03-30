@@ -30,7 +30,7 @@ const Tuiter = () => {
                <div className="row mt-2">
       <div className="col-2 col-lg-1 col-xl-2">
         
-        <NavigationSidebar/>
+        <NavigationSidebar active='home'/>
       </div>
       <div className="col-10 col-lg-7 col-xl-6">
          <TuitList/>
